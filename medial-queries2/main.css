@@ -1,3 +1,96 @@
 body {
   background: papayawhip;
+  height: 100%;
+  max-height: 964px;
 }
+
+.container {
+  display: inline-block;
+  display: flex;
+  flex-direction: row;
+  min-height: 100vh;
+} 
+
+.a {
+  background-color: red;
+  height: 15%;
+  border: 5px black;
+  margin: 0;
+  padding: 5rem;
+  max-width: 100%;
+  flex-grow: 5;
+}
+
+.b {
+  background-color: aqua;
+  height: 200px;  
+  margin: 0;
+  padding: 5rem;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;  
+  flex-grow: 4;
+}
+
+.c {
+  background-color: blueviolet;
+  height: 15%;
+  margin: 0;
+  padding: 5rem;
+  max-width: 20%;
+  flex-grow: 1;
+}
+
+.d {
+  background-color: orange;
+  height: 15%;
+  margin: 0;
+  padding: 5rem;
+  max-width: 100%;
+  flex-grow: 1;
+}
+
+.e {
+  background-color: green;
+  height: 15%;
+  margin: 0;
+  padding: 5rem;
+  max-width: 20%;
+  flex-grow: 1;
+}
+
+.f {
+  display: flex;
+  background-color: black;
+  height: 15%;
+  margin: 0;
+  padding: 5rem;
+  max-width: 40%;
+  flex-grow: 2;
+  justify-content: flex-end;
+}
+
+@media (min-width: 600px) {
+  .container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .a {
+    width: 100%;
+  }
+  .b {
+    max-width: 60%;
+  }
+  .c {
+    max-width: 20%;   
+  }
+  .d {
+    max-width: 20%;
+  }
+  .e {
+    max-width: 20%;
+  }
+  .f {
+    max-width: 60%;
+  }
+}   
