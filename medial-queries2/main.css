@@ -5,11 +5,17 @@ body {
 }
 
 .container {
-  display: inline-block;
-  display: flex;
+  display: block, flex;
   flex-direction: row;
+  flex-wrap: wrap-reverse;
   min-height: 100vh;
 } 
+
+.middle-row {
+  display: flex;
+  justify-content: center;
+  width: auto;
+}
 
 .a {
   background-color: red;
@@ -19,6 +25,8 @@ body {
   padding: 5rem;
   max-width: 100%;
   flex-grow: 5;
+  display: flex;
+  justify-content: center;
 }
 
 .b {
@@ -27,8 +35,7 @@ body {
   margin: 0;
   padding: 5rem;
   max-width: 100%;
-  display: flex;
-  justify-content: center;  
+  display: flex; 
   flex-grow: 4;
 }
 
@@ -46,7 +53,7 @@ body {
   height: 15%;
   margin: 0;
   padding: 5rem;
-  max-width: 100%;
+  max-width: 20%;
   flex-grow: 1;
 }
 
@@ -65,32 +72,18 @@ body {
   height: 15%;
   margin: 0;
   padding: 5rem;
-  max-width: 40%;
   flex-grow: 2;
-  justify-content: flex-end;
 }
 
 @media (min-width: 600px) {
-  .container {
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-  .a {
-    width: 100%;
-  }
   .b {
     max-width: 60%;
   }
-  .c {
-    max-width: 20%;   
-  }
-  .d {
-    max-width: 20%;
-  }
-  .e {
-    max-width: 20%;
+  .middle-row {
+    max-width: 60%;
   }
   .f {
     max-width: 60%;
+    flex-wrap: wrap;
   }
 }   
