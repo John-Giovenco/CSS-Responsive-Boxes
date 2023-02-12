@@ -1,88 +1,87 @@
 body {
   background: peachpuff;
-  height: 100%;
-  max-height: 964px;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .a {  
   background-color: red;
   height: 60px;
   max-width: 100%;
+  
 }
 
 .b {
   background-color: aqua;
   height: 60px;  
-  width: 60px;
+  width: 10%;
 }
 
 .c {
   background-color: blueviolet;
   height: 60px;  
-  width: 60px;
+  width: 10%;
 }
 
 .d {
   background-color: orange;
   height: 60px;  
-  width: 60px;
+  width: 10%;
 }
 
 .e {
   background-color: green;
   height: 60px;  
-  width: 60px;
+  width: 10%;
 }
 
 .f {
   background-color: black;
   height: 60px;  
-  width: 60px;
+  width: 10%;
 }
 
 .g {
-  background-color: yellow;
+  background-color: pink;
   height: 60px;  
-  width: 60px;
+  width: 10%;
 }
 
 .h {
   background-color: orange;
-  height: 60px;  
-  width: 100%;
+  height: 300px;
+  width: 15%;
 }
 
 .bcdefg {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 1rem;
-  }
+}
 
 .bcdefgh {
   display: flex;
   flex-direction: column;
+  max-width: 60%;
   }
 
-@media (min-width 992px) {
-
+@media (min-width: 600px) {
   .a, .b, .c, .d, .e, .f, .g, .h {
     height: 200px;
-  } 
-
+  }
+  .bcdefg {
+    width: 75%;
+  }
   .bcdefgh {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
   }
-
-  .bcdefg {
-    width: 50%;
-  }
-
   .h {
-    width: 25%;
+    max-width: 25%;
     height: auto;
   }
 }
